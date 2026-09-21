@@ -1,0 +1,50 @@
+@use "../../variables" as *;
+
+.edit-container {
+  max-width: 28rem;
+  background-color: $gray-90;
+  border: 1px solid $gray-80;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.edit-container--empty {
+  color: $gray-30;
+}
+
+.edit-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+.edit-title {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.delete-button {
+  background-color: transparent;
+  color: $danger;
+  border: 1px solid $danger;
+  padding: 0.5rem 0.9rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 150ms ease-in-out;
+  white-space: nowrap;
+}
+
+.delete-button:hover {
+  background-color: $danger;
+  color: #fff;
+}
+
+@media (max-width: 480px) {
+  .edit-container {
+    max-width: 100%;
+    padding: 1rem;
+  }
+}

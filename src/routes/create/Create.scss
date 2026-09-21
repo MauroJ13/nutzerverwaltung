@@ -1,0 +1,43 @@
+@use "../../variables" as *;
+
+.create-container {
+  max-width: 28rem;
+  background-color: $gray-90;
+  border: 1px solid $gray-80;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.create-title {
+  margin: 0 0 1.5rem;
+  font-size: 1.1rem;
+}
+
+.input-title {
+  font-weight: bold;
+}
+
+.input-form-container {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  max-width: 25rem;
+}
+
+.input-container {
+  max-width: 25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 480px) {
+  .create-container {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .input-form-container,
+  .input-container {
+    max-width: 100%;
+  }
+}
