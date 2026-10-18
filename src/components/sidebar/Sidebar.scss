@@ -36,6 +36,12 @@
   gap: 0.6rem;
 }
 
+.sidebar-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
 .sidebar-item {
   display: block;
   padding: 0.85rem 1rem;
@@ -46,6 +52,7 @@
   width: 100%;
   text-align: left;
   font-size: 0.95rem;
+  text-decoration: none;
   cursor: pointer;
   transition: all 150ms ease-in-out;
 }
